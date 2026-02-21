@@ -1,98 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #0a0f1a;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    background: #0a0f1a;
+    color: #ddd;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.main-nav {
+    background: #111;
+    border-bottom: 2px solid #00bfff;
+}
+
+.main-nav .site-title {
+    display: inline-block;
+    font-size: 24px;
+    padding: 15px 0;
+    color: #00bfff;
+}
+
+.main-nav nav {
+    float: right;
+}
+
+.main-nav nav a {
+    color: #eee;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero-image {
+    background: url("images/hero-storm.jpg") center/cover no-repeat;
+    height: 450px;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
-header {
+.featured .grid {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 60px;
-    background: rgba(10, 15, 26, 0.8);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    width: 100%;
-}
-
-.logo {
-    font-weight: 800;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-
-nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #ccc;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #00d4ff;
-}
-
-.hero {
-    height: 100vh;
-    background: url("images/storm-bg.jpg") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    border-radius: 12px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    margin-bottom: 30px;
-    color: #ccc;
-}
-
-.btn {
-    padding: 12px 25px;
-    background: #00d4ff;
-    color: black;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
     gap: 30px;
-    padding: 80px 40px;
+    margin-top: 30px;
 }
 
-.card {
-    background: #111827;
-    padding: 30px;
-    border-radius: 12px;
-    width: 280px;
-    transition: 0.3s;
+.featured .item {
+    width: 45%;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    background: #1f2937;
+.featured .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.latest-photos .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 footer {
     text-align: center;
-    padding: 40px;
+    padding: 30px 0;
     color: #888;
+    margin-top: 60px;
 }
