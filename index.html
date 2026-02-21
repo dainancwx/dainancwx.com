@@ -5,51 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dainan Weather</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1>DAINAN WEATHER</h1>
+    <div class="logo">DAINAN WEATHER</div>
     <nav>
-        <a href="#">Home</a>
-        <a href="gallery.html">Storm Gallery</a>
+        <a href="index.html">Home</a>
+        <a href="stations.html">Stations</a>
+        <a href="gallery.html">Gallery</a>
         <a href="projects.html">Projects</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>Storm Chaser • Weather Developer • Photographer</h2>
-</section>
-
-<section class="dashboard">
-    <h2>Live Weather Station</h2>
-
-    <div class="weather-grid">
-        <div class="main-temp">
-            <h1 id="temp">--°F</h1>
-        </div>
-
-        <div class="details">
-            <p>Humidity: <span id="humidity">--%</span></p>
-            <p>Pressure: <span id="pressure">---- hPa</span></p>
-            <p>Wind Speed: <span id="wind">-- mph</span></p>
-            <p>Wind Direction: <span id="winddir">--</span></p>
-        </div>
+    <div class="hero-content">
+        <h1>Storm Chaser & Weather Developer</h1>
+        <p>Live data systems. Radar overlays. Severe weather tracking.</p>
+        <a href="stations.html" class="btn">View Live Stations</a>
     </div>
 </section>
 
-<section class="about">
-    <h2>About Me</h2>
-    <p>
-        I am a storm chaser and weather developer building live weather systems,
-        radar overlays, and real-time alert platforms.
-    </p>
+<section class="cards">
+    <div class="card">
+        <h3>Weather Stations</h3>
+        <p>Real-time data from multiple deployed stations.</p>
+    </div>
+
+    <div class="card">
+        <h3>Storm Photography</h3>
+        <p>Supercells, lightning, tornado structure.</p>
+    </div>
+
+    <div class="card">
+        <h3>Development Projects</h3>
+        <p>Weather bots, radar rendering, alert systems.</p>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Dainan Weather</p>
+    © 2026 Dainan Weather
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
