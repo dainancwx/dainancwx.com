@@ -3,49 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dainan Weather</title>
+<title>Dainan Weather | Storm Chaser</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <div class="logo">DAINAN WEATHER</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="stations.html">Stations</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="projects.html">Projects</a>
-    </nav>
+<header class="main-nav">
+    <div class="container">
+        <h1 class="site-title">DAINAN WEATHER</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="stations.html">Stations</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
 </header>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Storm Chaser & Weather Developer</h1>
-        <p>Live data systems. Radar overlays. Severe weather tracking.</p>
-        <a href="stations.html" class="btn">View Live Stations</a>
+<section class="hero-image">
+    <div class="hero-text">
+        <h2>Storm Chaser & Weather Developer</h2>
+        <p>Extreme Weather Photos | Chase Logs | Projects | Weather Data</p>
     </div>
 </section>
 
-<section class="cards">
-    <div class="card">
-        <h3>Weather Stations</h3>
-        <p>Real-time data from multiple deployed stations.</p>
+<section class="featured">
+    <div class="container">
+        <h2>Featured Chase Logs</h2>
+        <div class="grid">
+            <!-- Example entries -->
+            <div class="item">
+                <a href="#"><img src="images/chase1.jpg" alt="Supercell Chase"></a>
+                <h3>2026 Tornado Chase — Great Plains</h3>
+                <p>Massive supercell intercept between Kansas and Nebraska.</p>
+            </div>
+            <div class="item">
+                <a href="#"><img src="images/lightning1.jpg" alt="Lightning Storm"></a>
+                <h3>Lightning Barrage — Central Missouri</h3>
+                <p>Lightning caught over rural fields at dusk.</p>
+            </div>
+        </div>
     </div>
+</section>
 
-    <div class="card">
-        <h3>Storm Photography</h3>
-        <p>Supercells, lightning, tornado structure.</p>
+<section class="latest-photos">
+    <div class="container">
+        <h2>Latest Photos</h2>
+        <div class="photo-grid">
+            <!-- Thumbnails -->
+        </div>
     </div>
+</section>
 
-    <div class="card">
-        <h3>Development Projects</h3>
-        <p>Weather bots, radar rendering, alert systems.</p>
+<section class="projects-overview">
+    <div class="container">
+        <h2>Creations & Tools</h2>
+        <ul>
+            <li><a href="projects.html#discord-bot">Weather Discord Bot</a></li>
+            <li><a href="projects.html#radar-overlays">Radar Map Tools</a></li>
+            <li><a href="projects.html#scanner-integration">Live Scanner</a></li>
+        </ul>
     </div>
 </section>
 
 <footer>
-    © 2026 Dainan Weather
+    <div class="container">
+        © 2026 Dainan Weather
+    </div>
 </footer>
 
 </body>
