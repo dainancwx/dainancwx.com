@@ -1,59 +1,98 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0d1117;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0f1a;
     color: white;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #161b22;
+    padding: 20px 60px;
+    background: rgba(10, 15, 26, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
 }
 
-header h1 {
-    color: #00ff88;
+.logo {
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
 nav a {
-    color: white;
-    margin-left: 20px;
+    margin-left: 30px;
     text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d4ff;
 }
 
 .hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #0d1117, #1a1f27);
-}
-
-.dashboard {
-    padding: 40px 20px;
-}
-
-.weather-grid {
+    height: 100vh;
+    background: url("images/storm-bg.jpg") center/cover no-repeat;
     display: flex;
-    gap: 40px;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.main-temp h1 {
-    font-size: 80px;
-    color: #00ff88;
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 12px;
 }
 
-.details p {
-    font-size: 18px;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.about {
-    padding: 40px 20px;
-    background-color: #161b22;
+.hero p {
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #00d4ff;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 40px;
+}
+
+.card {
+    background: #111827;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #1f2937;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #0d1117;
+    padding: 40px;
+    color: #888;
 }
