@@ -1,83 +1,83 @@
+/* PAGE BACKGROUND */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0b1220;
-  color: #e2e8f0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* dark background */
+  color: #e5e5e5;
 }
 
-/* Header */
+/* HEADER (White) */
 header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2rem;
-  background: #020617;
-  border-bottom: 1px solid #1e293b;
 }
 
+/* LOGO */
 .logo {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: bold;
+  color: #111;
 }
 
+/* NAV */
 nav a {
-  color: #94a3b8;
   text-decoration: none;
+  color: #333;
   margin-left: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
 nav a:hover,
 nav a.active {
-  color: white;
+  color: #0077cc;
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
+/* MAIN LAYOUT */
+main {
+  padding: 3rem 2rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
+/* CENTERED CONTENT BOX (STRATUS style but darker theme) */
+.content-box {
+  background-color: #1e1e1e;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
-/* Pages */
-.page, .content {
-  max-width: 1100px;
-  margin: 3rem auto;
-  padding: 0 2rem;
+/* HEADINGS */
+h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  color: #ffffff;
 }
 
-/* Gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+p {
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
 
-.gallery-grid img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Stations */
-.station-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.station-card {
-  background: #1e293b;
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid #334155;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer-content {
   text-align: center;
-  padding: 2rem;
-  border-top: 1px solid #1e293b;
-  color: #64748b;
+  color: #888;
+  font-size: 0.95rem;
 }
