@@ -1,40 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Dainan Caywood WX</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
+<header>
   <div class="logo">Dainan Caywood WX</div>
   <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="stations.html">Weather Stations</a>
-    <a href="about.html">About</a>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#stations">Weather Stations</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Storms. Sky. Atmosphere.</h1>
-  <p>Personal storm photography, weather observations, and field documentation.</p>
-</section>
+<main>
 
-<section class="content">
-  <h2>What This Site Is</h2>
-  <p>
-    Dainan Caywood WX is my personal weather and storm project.
-    This site showcases storm photography, weather station data,
-    and atmospheric documentation from my own work.
-  </p>
-</section>
+  <!-- HOME -->
+  <section id="home" class="tab-content active">
+    <h1>Storms. Sky. Atmosphere.</h1>
+    <p>
+      Welcome to Dainan Caywood WX — my personal weather and storm platform.
+      This site showcases my storm photography, atmospheric observations,
+      and personal weather station data.
+    </p>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="tab-content">
+    <h1>Storm Gallery</h1>
+    <div class="gallery-grid">
+      <img src="images/storm1.jpg" alt="">
+      <img src="images/storm2.jpg" alt="">
+      <img src="images/storm3.jpg" alt="">
+      <img src="images/storm4.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- WEATHER STATIONS -->
+  <section id="stations" class="tab-content">
+    <h1>Live Weather Stations</h1>
+
+    <div class="station-grid">
+      <div class="station-card">
+        <h3>Station 1</h3>
+        <p>Temperature: -- °F</p>
+        <p>Wind: -- mph</p>
+        <p>Humidity: -- %</p>
+      </div>
+
+      <div class="station-card">
+        <h3>Station 2</h3>
+        <p>Temperature: -- °F</p>
+        <p>Wind: -- mph</p>
+        <p>Humidity: -- %</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="tab-content">
+    <h1>About Me</h1>
+    <p>
+      I'm Dainan Caywood, a weather enthusiast focused on documenting
+      storm structure, severe weather, and atmospheric conditions.
+    </p>
+  </section>
+
+</main>
 
 <footer>
   <p>© 2026 Dainan Caywood WX</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
