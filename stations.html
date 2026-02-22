@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
-<title>Weather Stations</title>
+  <meta charset="UTF-8">
+  <title>Weather Stations | Dainan Caywood WX</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="navbar">
-    <div class="nav-container">
-        <div class="logo">DAINAN WEATHER</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="stations.html">Stations</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="projects.html">Projects</a>
-        </nav>
-    </div>
+  <div class="logo">Dainan Caywood WX</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="stations.html" class="active">Weather Stations</a>
+    <a href="about.html">About</a>
+  </nav>
 </header>
 
-<section style="padding-top:120px; width:85%; margin:auto;">
-    <h1 style="margin-bottom:40px;">Live Weather Stations</h1>
-
-    <div class="features">
-        <div class="feature">
-            <h2>Station 01</h2>
-            <p>Status: Online</p>
-            <p>Temperature: --°F</p>
-            <p>Wind: -- mph</p>
-        </div>
-
-        <div class="feature">
-            <h2>Station 02</h2>
-            <p>Status: Online</p>
-            <p>Temperature: --°F</p>
-            <p>Wind: -- mph</p>
-        </div>
-    </div>
+<section class="page-header">
+  <h1>Live Weather Stations</h1>
+  <p>Current observations from my personal weather stations.</p>
 </section>
+
+<section class="station-grid">
+
+  <div class="station-card">
+    <h3>Station 1</h3>
+    <p>Temperature: -- °F</p>
+    <p>Wind: -- mph</p>
+    <p>Humidity: -- %</p>
+  </div>
+
+  <div class="station-card">
+    <h3>Station 2</h3>
+    <p>Temperature: -- °F</p>
+    <p>Wind: -- mph</p>
+    <p>Humidity: -- %</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Dainan Caywood WX</p>
+</footer>
 
 </body>
 </html>
