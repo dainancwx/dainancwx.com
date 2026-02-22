@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #0f172a;
+  background: #0b1220;
   color: #e2e8f0;
 }
 
-/* NAVBAR */
-.navbar {
+/* Header */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,16 +16,15 @@ body {
 }
 
 .logo {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 nav a {
   color: #94a3b8;
-  margin-left: 1.5rem;
   text-decoration: none;
+  margin-left: 1.5rem;
   font-weight: 500;
-  transition: 0.2s;
 }
 
 nav a:hover,
@@ -33,66 +32,38 @@ nav a.active {
   color: white;
 }
 
-/* HERO */
+/* Hero */
 .hero {
   text-align: center;
   padding: 6rem 2rem;
-  background: linear-gradient(to bottom, #0f172a, #020617);
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
-.hero p {
-  color: #94a3b8;
-}
-
-/* CONTENT */
-.content {
-  max-width: 900px;
-  margin: 4rem auto;
+/* Pages */
+.page, .content {
+  max-width: 1100px;
+  margin: 3rem auto;
   padding: 0 2rem;
-  line-height: 1.7;
 }
 
-.page-header {
-  text-align: center;
-  padding: 4rem 2rem 2rem;
-}
-
-.page-header h1 {
-  font-size: 2.5rem;
-}
-
-/* GALLERY */
-.gallery {
-  max-width: 1200px;
-  margin: 2rem auto 4rem;
-  padding: 0 2rem;
+/* Gallery */
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
-.gallery img {
+.gallery-grid img {
   width: 100%;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-.gallery img:hover {
-  transform: scale(1.03);
-}
-
-/* WEATHER STATIONS */
+/* Stations */
 .station-grid {
-  max-width: 1100px;
-  margin: 3rem auto 4rem;
-  padding: 0 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
@@ -103,11 +74,7 @@ nav a.active {
   border: 1px solid #334155;
 }
 
-.station-card h3 {
-  margin-top: 0;
-}
-
-/* FOOTER */
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
