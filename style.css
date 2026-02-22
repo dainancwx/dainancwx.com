@@ -2,11 +2,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #121212; /* dark background */
+  background-color: #121212;
   color: #e5e5e5;
 }
 
-/* HEADER (White) */
+/* HEADER */
 header {
   background-color: white;
   border-bottom: 1px solid #ddd;
@@ -21,14 +21,12 @@ header {
   align-items: center;
 }
 
-/* LOGO */
 .logo {
   font-size: 1.4rem;
   font-weight: bold;
   color: #111;
 }
 
-/* NAV */
 nav a {
   text-decoration: none;
   color: #333;
@@ -42,31 +40,66 @@ nav a.active {
   color: #0077cc;
 }
 
-/* MAIN LAYOUT */
+/* MAIN */
 main {
   padding: 3rem 2rem;
 }
 
-/* CENTERED CONTENT BOX (STRATUS style but darker theme) */
-.content-box {
+/* CENTERED CONTENT BOX */
+.content-box,
+.page {
   background-color: #1e1e1e;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  padding: 3rem;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  text-align: center;   /* THIS centers headings and text */
 }
 
 /* HEADINGS */
 h1 {
   margin-top: 0;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #ffffff;
+  text-align: center;
 }
 
+/* PARAGRAPHS */
 p {
   line-height: 1.7;
   font-size: 1.1rem;
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* WEATHER STATIONS */
+.station-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.station-card {
+  background: #252525;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  border: 1px solid #333;
 }
 
 /* FOOTER */
